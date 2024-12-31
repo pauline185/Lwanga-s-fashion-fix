@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LWANGA’S FASHION FIX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="hero-section">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/banner_lwangas.png" alt="Banner 1"></div>
+                <div class="swiper-slide"><img src="images/banner_lwangas.png" alt="Banner 2"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <h1>WELCOME TO LWANGA’S FASHION FIX</h1>
+        <p>Your one-stop shop for stylish female clothing</p>
+        <button class="cta-button">Shop Now</button>
+    </header>
+
+    <main>
+        <section class="product-section">
+            <h2>Featured Products</h2>
+            <div id="product-filter">
+                <select>
+                    <option value="all">All</option>
+                    <option value="dresses">Dresses</option>
+                    <option value="tops">Tops</option>
+                </select>
+            </div>
+            <div class="product-grid"></div>
+        </section>
+		<section class="promotions-section">
+    <h2>Exclusive Offers</h2>
+    <div class="promotion-banner">
+        <h3>Flat 50% Off</h3>
+        <p>Shop now and enjoy unbeatable discounts on selected styles!</p>
+        <button class="cta-button">Shop the Sale</button>
+    </div>
+</section>
+
+
+        <section class="testimonial-section">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-grid"></div>
+        </section>
+
+        <section class="newsletter-section">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="newsletter-form">
+                <input type="email" id="email" placeholder="Enter your email">
+                <button type="submit" class="cta-button">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LWANGA’S FASHION FIX. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

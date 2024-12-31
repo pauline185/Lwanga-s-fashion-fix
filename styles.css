@@ -1,0 +1,164 @@
+:root {
+    --primary-color: #FF69B4;
+    --secondary-color: #FFFFFF;
+    --accent-color: #FFD1DC;
+    --text-color: #2C2C2C;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, var(--primary-color), #FF85C8);
+    color: var(--secondary-color);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    background-color: #FF85C8;
+}
+
+.product-section, .testimonial-section, .newsletter-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-grid div {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-grid div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+.discounted-price {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.promotions-section {
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(to right, var(--primary-color), #FF85C8);
+    color: var(--secondary-color);
+    margin: 20px 0;
+}
+
+.promotions-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.promotion-banner {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 600px;
+    text-align: center;
+}
+
+.promotion-banner h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.promotion-banner p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    color: var(--secondary-color);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.testimonial-card {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 1.2rem;
+    color: #FFD700; /* Gold for stars */
+}
